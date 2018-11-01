@@ -42,6 +42,23 @@ public class Magpie2
 		{
 			response = "Tell me more about your family.";
 		}
+		else if (statement.indexOf("dog") >= 0)
+		    response = "Tell me more about your pets";
+
+		else if (statement.indexOf("cat") >= 0)
+		    response = "Tell me more about your pets";
+		else if (statement.indexOf("Mr.") >= 0 ||
+                statement.indexOf("Ms.") >=0 ||
+                statement.indexOf("Mrs.")>=0)
+		    response = "They sound like a good teacher.";
+        else if (statement.indexOf("Mark")>=0)
+            response = "He isnt supposed to be in this class";
+        else if (statement.indexOf("Winston")>=0)
+            response = "I think he left his JDK at home";
+        else if (statement.indexOf("Todd")>=0)
+            response = "Ew I think he uses vectors";
+
+
 		else
 		{
 			response = getRandomResponse();
